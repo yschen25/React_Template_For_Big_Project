@@ -1,0 +1,7 @@
+export const GET_TEXT = 'GET_TEXT';
+export const ADD_TEXT = 'ADD_TEXT';
+export const DELETE_TEXT = 'DELETE_TEXT';
+
+export const GET_MEMBER_DATA = 'GET_MEMBER_DATA';
+export const GET_MEMBER_SUCCESS = 'GET_MEMBER_DATA_SUCCESS';
+export const DELETE_MEMBER_DATA = 'DELETE_MEMBER_DATA';
