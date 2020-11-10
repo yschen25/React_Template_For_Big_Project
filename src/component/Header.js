@@ -27,7 +27,8 @@ function Header() {
             <NavLeft>Website</NavLeft>
             <NavLink><Link to="/">Home</Link></NavLink>
             <NavLink><Link to="/story">Story</Link></NavLink>
-            <NavLink><Link to="/memberData">Member Data</Link></NavLink>
+            <NavLink><Link to="/member">Member</Link></NavLink>
+            <NavLink><Link to="/career">Career</Link></NavLink>
         </Nav>
     );
 }

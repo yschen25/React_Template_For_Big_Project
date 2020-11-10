@@ -5,6 +5,7 @@ import Header from '../component/Header';
 import Home from '../containers/home/containers';
 import Story from '../containers/story/containers';
 import MemberData from '../containers/memberData/containers';
+import Career from '../containers/career/containers';
 
 const Routes = () => {
 
@@ -14,7 +15,8 @@ const Routes = () => {
                 <Header/>
                 <Route path="/"  exact component={Home}/>
                 <Route path="/story" exact component={Story}/>
-                <Route path="/memberData" exact component={MemberData}/>
+                <Route path="/member" exact component={MemberData}/>
+                <Route path="/career" exact component={Career}/>
             </Router>
         </>
     )

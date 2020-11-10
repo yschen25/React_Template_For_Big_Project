@@ -5,12 +5,10 @@ import Api from '../../../saga/api';
 
 const Index = () => {
 
-
     return (
         <>
         </>
     )
 };
-
 
 export default Index;
