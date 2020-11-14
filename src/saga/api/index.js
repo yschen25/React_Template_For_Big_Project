@@ -12,29 +12,28 @@ const http = axios.create({
     headers: {config}
 });
 
-
 const getAll = () => {
-    return http.get('yschen25/Interview/memberData');
+    return http.get('yschen25/Interview_Template/memberData');
 };
 
 const getDataById = id => {
-    return http.get(`yschen25/Interview/memberData/${id}`);
+    return http.get(`yschen25/Interview_Template/memberData/${id}`);
 };
 
 const create = data => {
-    return http.post('yschen25/Interview/memberData/', data);
+    return http.post('yschen25/Interview_Template/memberData/', data);
 };
 
 const updateDataById = (id, data) => {
-    return http.put(`yschen25/Interview/memberData/${id}`, data);
+    return http.put(`yschen25/Interview_Template/memberData/${id}`, data);
 };
 
 const removeDataById = id => {
-    return http.delete(`yschen25/Interview/memberData/${id}`);
+    return http.delete(`yschen25/Interview_Template/memberData/${id}`);
 };
 
 const removeAll = () => {
-    return http.delete('yschen25/Interview/memberData');
+    return http.delete('yschen25/Interview_Template/memberData');
 };
 
 

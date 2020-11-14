@@ -4,29 +4,25 @@
       "id": "0",
       "name": "Dino",
       "habit" : "Coding",
-      "money" : "5,566,600",
-      "img": "dino"
+      "money" : "5,566,600"
     },
     {
       "id": "1",
       "name": "Ka",
       "habit" : "Studying",
-      "money" : "30",
-      "img": "ka"
+      "money" : "30"
     },
     {
       "id": "2",
       "name": "Duck",
       "habit" : "Debugging",
-      "money" : "1,000",
-      "img": "duck"
+      "money" : "1,000"
     },
     {
       "id": "3",
       "name": "Capoo",
       "habit" : "Eating",
       "money" : "20,000,000,000",
-      "img": "capoo"
     }
   ]
 }
