@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import {Container, SmallTitle, Button, Form, Input} from '../styles';
-import PropTypes from 'prop-types';
-import Api from '../../../saga/api';
+import React, { useEffect, useState } from 'react';
+import {Title} from '../styles';
+import Api from '../../../api';
 
 const Index = () => {
 
     return (
         <>
+            <Title>HOME</Title>
         </>
-    )
+    );
 };
 
 export default Index;

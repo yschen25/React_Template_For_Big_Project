@@ -1,7 +1,19 @@
 {
   "presets": [
-    "@babel/preset-react",
-    "@babel/preset-env"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "ie 11"
+          ]
+        }
+      }
+    ],
+    [
+      "@babel/preset-react"
+    ]
   ],
   "plugins": [
     [
@@ -18,14 +30,7 @@
   "env": {
     "production": {
       "plugins": [
-        [
-          "react-remove-properties",
-          {
-            "properties": [
-              "data-testid"
-            ]
-          }
-        ]
+        ["react-remove-properties", {"properties": ["data-testid"]}]
       ]
     }
   }

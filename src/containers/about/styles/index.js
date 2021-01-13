@@ -15,16 +15,7 @@ const Title = styled.h1`
   padding: 30px 0;
 `;
 
-const Form = styled.div`
-    width : 500px;
-    height : 300px;  
-    outline: 2px solid #858585;
-    padding : 15px;
-    line-height : 2
-`;
-
 export {
     Container,
-    Title,
-    Form
+    Title
 };

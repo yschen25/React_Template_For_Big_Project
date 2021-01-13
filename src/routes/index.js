@@ -1,25 +1,15 @@
 import React from 'react';
-import {Route, BrowserRouter as Router} from 'react-router-dom';
-
-import Header from '../component/Header';
+import { Route, Switch } from 'react-router';
 import Home from '../containers/home/containers';
-import Story from '../containers/story/containers';
-import MemberData from '../containers/memberData/containers';
+import About from '../containers/about/containers';
 import Career from '../containers/career/containers';
 
-const Routes = () => {
-
-    return (
-        <>
-            <Router>
-                <Header/>
-                <Route path="/"  exact component={Home}/>
-                <Route path="/story" exact component={Story}/>
-                <Route path="/member" exact component={MemberData}/>
-                <Route path="/career" exact component={Career}/>
-            </Router>
-        </>
-    )
-};
+const Routes = () => (
+    <Switch>
+        <Route path="/" exact component={Home}/>
+        <Route path="/reactHooks" exact component={About}/>
+        <Route path="/reactHooksAndRedux" exact component={Career}/>
+    </Switch>
+);
 
 export default Routes;

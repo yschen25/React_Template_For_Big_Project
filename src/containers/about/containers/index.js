@@ -5,7 +5,7 @@ const Index = () => {
 
     return (
         <>
-            <Title>Nav 2</Title>
+            <Title>Nav 1</Title>
         </>
     )
 };

@@ -2,27 +2,18 @@
   "memberData": [
     {
       "id": "0",
-      "name": "Dino",
-      "habit" : "Coding",
-      "money" : "5,566,600"
+      "name": "Amy",
+      "money" : "5,000"
     },
     {
       "id": "1",
-      "name": "Ka",
-      "habit" : "Studying",
-      "money" : "30"
+      "name": "Joe",
+      "money" : "10,000"
     },
     {
       "id": "2",
-      "name": "Duck",
-      "habit" : "Debugging",
-      "money" : "1,000"
-    },
-    {
-      "id": "3",
-      "name": "Capoo",
-      "habit" : "Eating",
-      "money" : "20,000,000,000"
+      "name": "Lio",
+      "money" : "200,000"
     }
   ]
 }
