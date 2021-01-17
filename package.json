@@ -1,9 +1,41 @@
 {
-  "name": "Interview",
+  "name": "React",
   "version": "1.0.0",
   "main": "main.js",
-  "author": "Yi-Shiuan Chen",
+  "author": "Yi-Shiuan Chen, yschen25@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "watch": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build --historyApiFallback --config webpack.dev.config.js",
+    "prod": "webpack --config webpack.prod.config.js",
+    "analyze": "webpack --config webpack.prod.config.js --profile --json > stats.json",
+    "report": "webpack-bundle-analyzer ./stats.json",
+    "test": "jest --coverage",
+    "test:single": "node ./node_modules/jest-single-file-coverage"
+  },
+  "jest": {
+    "setupFiles": [
+      "@testing-library/react/dont-cleanup-after-each",
+      "./__test__/setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss|sass)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__test__/__mocks__/fileTransformer.js"
+    },
+    "collectCoverageFrom": [
+      "src/styles/*.js",
+      "src/commons/*.js",
+      "src/containers/*/*.js",
+      "src/routes/home/*/*.js",
+      "!src/assets/*.*"
+    ]
+  },
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -60,37 +92,5 @@
     "jest-single-file-coverage": "^1.0.2",
     "jest-styled-components": "^6.3.4",
     "path": "^0.12.7"
-  },
-  "scripts": {
-    "watch": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build --historyApiFallback --config webpack.dev.config.js",
-    "prod": "webpack --config webpack.prod.config.js",
-    "analyze": "webpack --config webpack.prod.config.js --profile --json > stats.json",
-    "report": "webpack-bundle-analyzer ./stats.json",
-    "test": "jest --coverage",
-    "test:single": "node ./node_modules/jest-single-file-coverage"
-  },
-  "jest": {
-    "setupFiles": [
-      "@testing-library/react/dont-cleanup-after-each",
-      "./__test__/setup.js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|scss|sass)$": "identity-obj-proxy"
-    },
-    "transform": {
-      "^.+\\.js$": "babel-jest",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__test__/__mocks__/fileTransformer.js"
-    },
-    "collectCoverageFrom": [
-      "src/styles/*.js",
-      "src/commons/*.js",
-      "src/containers/*/*.js",
-      "src/routes/home/*/*.js",
-      "!src/assets/*.*"
-    ]
   }
 }
