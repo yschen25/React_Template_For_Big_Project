@@ -7,7 +7,6 @@ module.exports = merge(config, {
             'react-dom': '@hot-loader/react-dom'
         }
     },
-    // devServer 則是 webpack-dev-server 設定
     devServer: {
         host: 'localhost',
         inline: true,
