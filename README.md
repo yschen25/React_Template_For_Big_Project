@@ -1,44 +1,52 @@
 
 # React
 
-## Available Scripts
+#### Available Scripts
 
-In the project directory, you can run:
+In the project directory, first you need to install the node modules
 
 ```
-npm run watch
+npm install
 ```
+
+<br/>
+
+Then you can : 
 Runs the website in the development mode,
 pen http://localhost:3310 to view it in the browser Automatically.
 
 The page will reload if you make edits.
+```
+npm run watch
+```
+
 
 <br/>
 
+To bundle the files with base and prod webpack config
 
 ```
 npm run prod 
 ```
-To bundle the files with base and prod webpack config
 
 <br/>
 
+Runs the website with ESLint.
 ```
 npm run lint
 ```
-Runs the website with ESLint.
 
 <br/>
 
+Follow the ESLint principle to fix the website.
 ```
 npm run lint-fix
 ```
-Follow the ESLint principle to fix the website.
 
 <br/>
+
+Launches the test runner.
 
 ```
 npm run test
 ```
-Launches the test runner.
-
