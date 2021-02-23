@@ -9,9 +9,9 @@ import { store } from './store';
 
 ReactDOM.render(
     <Provider store={store}>
-        <ResetStyle/>
-        <GlobalStyle/>
-        <App/>
+        <ResetStyle />
+        <GlobalStyle />
+        <App />
     </Provider>,
     document.getElementById('app')
 );
