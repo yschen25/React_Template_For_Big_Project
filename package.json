@@ -101,6 +101,7 @@
     "jest": "^24.9.0",
     "jest-single-file-coverage": "^1.0.2",
     "jest-styled-components": "^6.3.4",
+    "jest-transform-stub": "^2.0.0",
     "path": "^0.12.7"
   }
 }
